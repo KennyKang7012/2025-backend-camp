@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/healthcheck', (req, res) => {
     res.status(200).json({
     status: 'success',
-    message: 'OK'
+    message: '成功連接到後端伺服器'
   })
 })
 app.use('/api/credit-package', creditPackageRouter)
